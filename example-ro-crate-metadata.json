@@ -1,0 +1,95 @@
+{ "@context": "https://w3id.org/ro/crate/1.1/context", 
+  "@graph": [
+    {
+        "@type": "CreativeWork",
+        "@id": "ro-crate-metadata.json",
+        "conformsTo": {"@id": "https://w3id.org/ro/crate/1.1"},
+        "about": {"@id": "./"}
+    },
+    {
+        "@id": "./", 
+        "@type": "Dataset",
+        "identifier": "https://doi.org/10.1093/bioinformatics/btp163",              
+        "name" : "MetaGoFlow sequence data results for sample EMOBON00001",                       
+        "description" : "This is the RO-Crate for the MetaGOflow analysis results of EMO BON sample XXXX",
+        "datePublished": "2022-11-02",                                              
+        "license": {"@id": "Creative Commons (CC-BY 4.0)"},                      
+        "publisher": {"@id": "https://ror.org/0038zss60"},                          
+        "hasPart": [
+                        {"@id": "https://fake.build/net-http.html"},       
+                        {"@id": "merged-sequences/"},          
+                        {"@id": "fastp.html"},    
+                        {"@id": "qc_summary"}       
+                    ] 
+    },
+        {
+            "@id": "https://ror.org/0038zss60",
+            "@type": "Organization",
+            "name": "European Marine Biological Resource Centre",
+            "url": "https://ror.org/0038zss60",
+            "contactPoint": {"@id": "mailto:help@embrc.org"}
+        },
+        {
+            "@id": "mailto:help@embrc.org",
+            "@type": "ContactPoint",
+            "contactType": "Help Desk",
+            "email": "help@embrc.org",
+            "identifier": "help@embrc.org",
+            "url": "https://www.embrc.eu/about-us/contact-us"
+        },
+        {
+            "@id": "https://creativecommons.org/licenses/by/4.0",
+            "@type": "CreativeWork",
+            "identifier": "https://creativecommons.org/licenses/by/4.0",
+            "name": "Creative Commons (CC-BY 4.0)"
+        },    
+    {
+        "@id": "https://fake.build/net-http.html",
+        "@type": "File",
+        "name": "Sample Metadata RO-Crate",
+        "description": "Sample metadata",
+        "encodingFormat": "application/zip"
+    },
+    {
+        "@id": "merged-sequences/",
+        "@type": "Dataset",
+        "name": "MetaGOflow merged sequences for sample EMOBON00001",
+        "description": "Merged and filered sequence results from the execution of MetaGOflow.",
+        "hasPart": [
+            {"id@": "wgs-paired-SRR1620013.merged.fasta"},
+            {"id@": "wgs-paired-SRR1620013.merged_CDS.ffn"},
+            {"id@": "wgs-paired-SRR1620013.merged_CDS.faa"}
+        ]
+    },
+    {
+        "@id": "wgs-paired-SRR1620013.merged.fasta",
+        "@type": "File",
+        "name": "Merged and trimmed sequences in FASTA format",
+        "encodingFormat": "application/x-fasta"
+    },
+    {
+        "@id": "wgs-paired-SRR1620013.merged_CDS.ffn",
+        "@type": "File",
+        "name": "Gene coding nucleotide sequences (CDS) in FASTA format",
+        "encodingFormat": "application/x-fasta"
+    },
+    {
+        "@id": "wgs-paired-SRR1620013.merged_CDS.faa",
+        "@type": "File",
+        "name": "Protein coding amino-acid sequences in FASTA format",
+        "encodingFormat": "application/x-fasta"
+    },    
+    {
+        "@id": "fastp.html",
+        "@type": "File",
+        "name": "FASTP summary analysis of reads in HTML format",
+        "encodingFormat": "text/html"
+    },
+    {
+        "@id": "qc_summary",
+        "@type": "File",
+        "name": "Summary of quality control of data.",
+        "encodingFormat": "text/plain"
+    }
+]
+}
