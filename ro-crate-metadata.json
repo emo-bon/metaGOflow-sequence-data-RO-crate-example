@@ -65,19 +65,19 @@
         "@id": "wgs-paired-SRR1620013.merged.fasta",
         "@type": "File",
         "name": "Merged and trimmed sequences in FASTA format",
-        "encodingFormat": "application/x-fasta"
+        "encodingFormat": "text/plain"
     },
     {
         "@id": "wgs-paired-SRR1620013.merged_CDS.ffn",
         "@type": "File",
         "name": "Gene coding nucleotide sequences (CDS) in FASTA format",
-        "encodingFormat": "application/x-fasta"
+        "encodingFormat": "text/plain"
     },
     {
         "@id": "wgs-paired-SRR1620013.merged_CDS.faa",
         "@type": "File",
         "name": "Protein coding amino-acid sequences in FASTA format",
-        "encodingFormat": "application/x-fasta"
+        "encodingFormat": "text/plain"
     },    
     {
         "@id": "fastp.html",
